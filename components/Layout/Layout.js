@@ -9,6 +9,8 @@ function Layout({ header, footer, children }) {
 			{children}
             <hr/>
             <h3>{footer}</h3>
+            <hr/>
+
 		</div>
 	);
 }

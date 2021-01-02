@@ -6,6 +6,7 @@ function index() {
 	return (
 		<Layout header="This is a header" footer="This is a footer">
 			{/* The following entire content is passed as props to the Layout component*/}
+
 			<head>
 				<title>Home Page</title>
 				<meta name="description" content="Learning Next Js" />
@@ -14,6 +15,7 @@ function index() {
 			<Link href="/about">
 				<a style={myStyle}>About Page</a>
 			</Link>
+
 		</Layout>
 	);
 }
