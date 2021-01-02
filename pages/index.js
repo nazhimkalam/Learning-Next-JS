@@ -1,20 +1,20 @@
 import Link from 'next/link';
-import Nav from '../components/Nav/Nav';
 import Head from 'next/head';
+import Layout from '../components/Layout/Layout';
 
 function index() {
 	return (
-		<div>
+		<Layout>
+			{/* The following entire content is passed as props to the Layout component*/}
 			<head>
 				<title>Home Page</title>
 				<meta name="description" content="Learning Next Js" />
 			</head>
-			<Nav />
 			<h2>Hello World!</h2>
 			<Link href="/about">
 				<a style={myStyle}>About Page</a>
 			</Link>
-		</div>
+		</Layout>
 	);
 }
 

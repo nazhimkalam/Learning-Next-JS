@@ -1,15 +1,16 @@
 import Link from 'next/link';
 import Nav from '../components/Nav/Nav';
-import Head from "next/head"
+import Head from 'next/head';
+import Layout from '../components/Layout/Layout';
 
 function about() {
 	return (
-		<div>
+		<Layout>
+            {/* The following entire content is passed as props to the Layout component*/}
 			<head>
 				<title>About Page</title>
-                <meta name="description" content = "Learning Next Js"/>
+				<meta name="description" content="Learning Next Js" />
 			</head>
-			<Nav />
 			<h3>This is the about page</h3>
 			<Link href="/">
 				<a style={{ textDecoration: 'none' }}>Index Page</a>
@@ -21,7 +22,7 @@ function about() {
 					color: red;
 				}
 			`}</style>
-		</div>
+		</Layout>
 	);
 }
 
