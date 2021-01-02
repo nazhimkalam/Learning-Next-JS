@@ -4,7 +4,7 @@ import Layout from '../components/Layout/Layout';
 
 function index() {
 	return (
-		<Layout>
+		<Layout header="This is a header" footer="This is a footer">
 			{/* The following entire content is passed as props to the Layout component*/}
 			<head>
 				<title>Home Page</title>

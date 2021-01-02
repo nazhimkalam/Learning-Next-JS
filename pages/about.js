@@ -5,8 +5,8 @@ import Layout from '../components/Layout/Layout';
 
 function about() {
 	return (
-		<Layout>
-            {/* The following entire content is passed as props to the Layout component*/}
+		<Layout header="This is a header" footer="This is a footer">
+			{/* The following entire content is passed as props to the Layout component*/}
 			<head>
 				<title>About Page</title>
 				<meta name="description" content="Learning Next Js" />
