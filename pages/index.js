@@ -1,11 +1,14 @@
-import React from 'react'
+import Link from 'next/link';
 
 function index() {
-    return (
-        <div>
-            <h2>Hello World!</h2>
-        </div>
-    )
+	return (
+		<div>
+			<h2>Hello World!</h2>
+			<Link href="/about">
+				About Page
+			</Link>
+		</div>
+	);
 }
 
-export default index
+export default index;
