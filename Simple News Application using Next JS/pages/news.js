@@ -1,8 +1,6 @@
-import Link from 'next/link';
-import Head from 'next/head';
-import Layout from '../components/Layout';
 import Router from 'next/router';
 import { useState } from 'react';
+import Layout from '../components/Layout';
 
 function News({ news }) {
 	const [searchQuery, setSearchQuery] = useState('react');
@@ -31,6 +29,8 @@ function News({ news }) {
 			<div>
 				<h3>List of News</h3>
 
+				<hr />
+                <h4>Search Result for: {searchQuery}</h4>
 				<hr />
 				{searchForm()}
 				<hr />
